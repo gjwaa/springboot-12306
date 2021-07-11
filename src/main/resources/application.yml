@@ -1,3 +1,14 @@
 server:
   servlet:
     context-path: /12306
+spring:
+  datasource:
+    username: gjw
+    password: 123guan!@#
+    url: jdbc:mysql://rds-ggg-vpc.mysql.rds.aliyuncs.com/12306?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+mybatis:
+  type-aliases-package: com.gjw.bean
+  mapper-locations: classpath:mapper/*.xml
